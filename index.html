@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form_BEN</title>
+</head>
+<body>
+  <header>
+    <h1>Validaciones JS</h1>
+  </header>
+  <nav>
+    <p>Los campos se validaran de la siguiente manera</p>
+    <ul>
+      <li>
+        <h4>Ficha:</h4>
+        <p>se puede ingresar cualquier caracter</p>
+      </li>
+      <li>
+        <h4>Nombre:</h4>
+        <p>solo se puede ingresar letras</p>
+      </li>
+      <li>
+        <h4>Apellidos:</h4>
+        <p>solo se puede ingresar letras</p>
+      </li>
+      <li>
+        <h4>Correo:</h4>
+        <p>solo se puede ingresar Correo valido</p>
+      </li>
+      <li>
+        <h4>Telefono:</h4>
+        <p>solo se puede ingresar numeros</p>
+      </li>
+      <li>
+        <h4>Genero:</h4>
+        <p>solo se puede seleccionar un Genero</p>
+      </li>
+      <li>
+        <h4>Ciudad:</h4>
+        <p>solo se puede seleccionar una Ciudad</p>
+      </li>
+      <li>
+        <h4>Habilidades:</h4>
+        <p>solo se puede seleccionar como minimo 3 Habilidades</p>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <form action="index.html" method="get">
+      <label for="Numero_de_Ficha">Numero de Ficha</label>
+      <input type="text" id="Numero_de_Ficha" name="Numero_de_Ficha" maxlength="32" pattern="[A-Za-z]{1,32}" required
+        autocomplete="off">
+      <label for="Nombre">Nombre</label>
+      <input type="text" id="Nombre" name="Nombre" required autocomplete="off">
+      <label for="Apellidos">Apellidos</label>
+      <input type="text" id="Apellidos" name="Apellidos" required autocomplete="off">
+      <label for="email">Correo</label>
+      <input type="email" id="email" name="email" required autocomplete="off">
+      <label for="tel">Telefono</label>
+      <input type="tel" id="tel" name="tel" required pattern="[0-9]{10}" maxlength="10" autocomplete="off">
+      <input type="radio" name="Genero" id="Hombre" value="Hombre" required>
+      <label for="Hombre">Hombre</label>
+      <input type="radio" name="Genero" id="Mujer" value="Mujer" required>
+      <label for="Mujer">Mujer</label>
+      <input type="radio" name="Genero" id="Otro" value="Otro" required>
+      <label for="Otro">Otro</label>
+      <label for="inputCiudadLine2" class="control-label">Ciudad</label>
+      <select class="form-control" id="inputCiudadLine2" name="Ciudad" required>
+        <option value="">-</option>
+        <option value="Arauca">Arauca</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Barranquilla">Barranquilla</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Cali">Cali</option>
+        <option value="Cartagena">Cartagena</option>
+        <option value="Cúcuta">Cúcuta</option>
+        <option value="Florencia">Florencia</option>
+        <option value="Ibagué">Ibagué</option>
+        <option value="Leticia">Leticia</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Mitú">Mitú</option>
+        <option value="Mocoa">Mocoa</option>
+        <option value="Montería">Montería</option>
+        <option value="Neiva">Neiva</option>
+        <option value="Pasto">Pasto</option>
+        <option value="Pereira">Pereira</option>
+        <option value="Popayán">Popayán</option>
+        <option value="Puerto Carreño">Puerto Carreño</option>
+        <option value="Puerto Inírida">Puerto Inírida</option>
+        <option value="Quibdó">Quibdó</option>
+        <option value="Riohacha">Riohacha</option>
+        <option value="San Andrés">San Andrés</option>
+        <option value="San José del Guaviare">San José del Guaviare</option>
+        <option value="Santa Marta">Santa Marta</option>
+        <option value="Sincelejo">Sincelejo</option>
+        <option value="Tunja">Tunja</option>
+        <option value="Valledupar">Valledupar</option>
+        <option value="Villavicencio">Villavicencio</option>
+        <option value="Yopal">Yopal</option>
+      </select>
+      <p>Seleccione mínimo 3 Habilidades</p>
+      <input type="checkbox" name="HTML" id="HTML">
+      <label for="HTML">HTML</label>
+      <input type="checkbox" name="CSS" id="CSS">
+      <label for="CSS">CSS</label>
+      <input type="checkbox" name="JavaScript" id="JavaScript">
+      <label for="JavaScript">JavaScript</label>
+      <input type="checkbox" name="PHP" id="PHP">
+      <label for="PHP">PHP</label>
+      <input type="checkbox" name="JAVA" id="JAVA">
+      <label for="JAVA">JAVA</label>
+      <input type="checkbox" name="SQL" id="SQL">
+      <label for="SQL">SQL</label>
+      <input type="checkbox" name="UML" id="UML">
+      <label for="UML">UML</label>
+      <button type="submit">enviar</button>
+    </form>
+  </section>
+  <footer>
+  </footer>
+</body>
+
+</html>
