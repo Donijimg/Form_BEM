@@ -4,39 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form_BEN</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Validaciones JS</h1>
-  </header>
-  <nav>
-    <p>Los campos se validaran de la siguiente manera</p>
-    <ul>
-      <li>
+  <header class="header">
+    <h1 class="header__titulo">Validaciones JS</h1>
+    <h2 class="header__titulo header__titulo--letra_pequeña" >xd</h2>
+    <nav class="navbar__unica">
+    <ul><p class="navbar__unica navbar__parrafo--uno">Los campos se validaran de la siguiente manera</p>
+      <li class="navbar__list--uno">
         <h4>Ficha:</h4>
         <p>se puede ingresar cualquier caracter</p>
       </li>
-      <li>
+      <li class="navbar__list--dos">
         <h4>Nombre:</h4>
         <p>solo se puede ingresar letras</p>
       </li>
-      <li>
+      <li class="navbar__list--tres">
         <h4>Apellidos:</h4>
         <p>solo se puede ingresar letras</p>
       </li>
-      <li>
+      <li class="navbar__list--cuatro">
         <h4>Correo:</h4>
         <p>solo se puede ingresar Correo valido</p>
       </li>
-      <li>
+      <li class="navbar__list--cinco">
         <h4>Telefono:</h4>
         <p>solo se puede ingresar numeros</p>
       </li>
-      <li>
+      <li class="navbar__list--seis">
         <h4>Genero:</h4>
         <p>solo se puede seleccionar un Genero</p>
       </li>
-      <li>
+      <li class="">
         <h4>Ciudad:</h4>
         <p>solo se puede seleccionar una Ciudad</p>
       </li>
@@ -46,8 +46,10 @@
       </li>
     </ul>
   </nav>
+</header>
+<main>
   <section>
-    <form action="index.html" method="get">
+    <form action="index.html" method="get" class="cart__unica--tamaño">
       <label for="Numero_de_Ficha">Numero de Ficha</label>
       <input type="text" id="Numero_de_Ficha" name="Numero_de_Ficha" maxlength="32" pattern="[A-Za-z]{1,32}" required
         autocomplete="off">
