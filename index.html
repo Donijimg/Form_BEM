@@ -8,7 +8,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
   <title>Form_DOM</title>
 </head>
@@ -20,7 +19,7 @@
   <section class="container section__card">
     <nav class="card">
 
-      <p class="card__title">Los campos se validaran de la siguiente manera</p>
+      <p class="card__title">Los campos se validarán de la siguiente manera</p>
       <ul class="list">
         <li class="list__item">
           <h4 class="bold">Ficha:</h4>
@@ -36,15 +35,15 @@
         </li>
         <li class="list__item">
           <h4 class="bold">Correo:</h4>
-          <p>solo se puede ingresar Correo valido</p>
+          <p>solo se puede ingresar Correo válido</p>
         </li>
         <li class="list__item">
-          <h4 class="bold">Telefono:</h4>
-          <p>solo se puede ingresar numeros</p>
+          <h4 class="bold">Teléfono:</h4>
+          <p>solo se puede ingresar números</p>
         </li>
         <li class="list__item">
-          <h4 class="bold">Genero:</h4>
-          <p>solo se puede seleccionar un Genero</p>
+          <h4 class="bold">Género:</h4>
+          <p>solo se puede seleccionar un Género</p>
         </li>
         <li class="list__item">
           <h4 class="bold">Ciudad:</h4>
@@ -52,20 +51,20 @@
         </li>
         <li class="list__item">
           <h4 class="bold">Habilidades:</h4>
-          <p>solo se puede seleccionar como minimo 3 Habilidades</p>
+          <p>solo se puede seleccionar como mínimo 3 Habilidades</p>
         </li>
       </ul>
     </nav>
   </section>
   <main>
     <section class="container section__card">
-      <form action="index.html" method="get" class="card" autocomplete="on" novalidate>
+      <form action="index.html" class="card" autocomplete="on" novalidate>
         <h1 class="card__title">Formulario</h1>
 
         <div class="control">
-          <label for="Numero_de_Ficha">Numero de Ficha</label>
+          <label for="Numero_de_Ficha">Número de Ficha</label>
           <input type="text" id="Numero_de_Ficha" name="Numero_de_Ficha" class="control__input" maxlength="32"
-            pattern="[A-Za-z]{1,32}" required autocomplete="off">
+            pattern="[A-Za-z]{1,32}" required autocomplete="off" value="">
           <span id="Numero_de_Ficha_error" class="error"></span>
         </div>
 
@@ -90,19 +89,18 @@
         </div>
 
         <div class="control">
-          <label for="telefono">Telefono</label>
+          <label for="telefono">Teléfono</label>
           <input maxlength="10" autocomplete="off" type="tel" name="telefono" pattern="[0-9]{10}" maxlength="10"
             id="telefono" class="control__input" required>
           <span id="telefono_error" class="error"></span>
         </div>
         <div class="control control--row padding-top-8">
-
-
-          <label for="Hombre">Hombre<input type="radio" name="Genero" id="Hombre" value="Hombre" required></label>
-
-          <label for="Mujer">Mujer<input type="radio" name="Genero" id="Mujer" value="Mujer"></label>
-
-          <label for="Otro">Otro<input type="radio" name="Genero" id="Otro" value="Otro"></label>
+          <label for="Hombre">Hombre</label>
+          <input type="radio" name="Genero" id="Hombre" value="Hombre" required>
+          <label for="Mujer">Mujer</label>
+          <input type="radio" name="Genero" id="Mujer" value="Mujer">
+          <label for="Otro">Otro</label>
+          <input type="radio" name="Genero" id="Otro" value="Otro">
         </div>
 
         <div class="control padding-top-8">
@@ -144,40 +142,37 @@
           </select>
         </div>
         <div class="control padding-top-8">
-          <p>Seleccione mínimo 3 Habilidades</p>
-
-          <div class="control padding-top-8">
-            <p>Seleccione minimo 3 habilidades</p>
-            <div>
-              <input type="checkbox" id="html" value="html">
-              <label for="html">HTML</label>
-            </div>
-            <div>
-              <input type="checkbox" id="css" value="css">
-              <label for="css">CSS</label>
-            </div>
-            <div>
-              <input type="checkbox" id="javascript" value="javascript">
-              <label for="javascrit">Javascript</label>
-            </div>
-            <div>
-              <input type="checkbox" id="php" value="php">
-              <label for="php">PHP</label>
-            </div>
-            <div>
-              <input type="checkbox" id="java" value="java">
-              <label for="java">Java</label>
-            </div>
-            <div>
-              <input type="checkbox" id="sql" value="sql">
-              <label for="sql">SQL</label>
-            </div>
-            <div>
-              <input type="checkbox" id="uml" value="uml">
-              <label for="uml">UML</label>
-            </div>
+          <p>Seleccione minimo 3 habilidades</p>
+          <div>
+            <input type="checkbox" id="html" value="html">
+            <label for="html">HTML</label>
+          </div>
+          <div>
+            <input type="checkbox" id="css" value="css">
+            <label for="css">CSS</label>
+          </div>
+          <div>
+            <input type="checkbox" id="javascript" value="javascript">
+            <label for="javascrit">Javascript</label>
+          </div>
+          <div>
+            <input type="checkbox" id="php" value="php">
+            <label for="php">PHP</label>
+          </div>
+          <div>
+            <input type="checkbox" id="java" value="java">
+            <label for="java">Java</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sql" value="sql">
+            <label for="sql">SQL</label>
+          </div>
+          <div>
+            <input type="checkbox" id="uml" value="uml">
+            <label for="uml">UML</label>
           </div>
         </div>
+
         <div class="d-flex d-center padding-top-8">
           <button type="submit" id="submitBtn" class="button button--blue">Validar <i class="bi bi-send"></i></button>
         </div>
@@ -185,6 +180,8 @@
     </section>
     <footer>
     </footer>
+  </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
