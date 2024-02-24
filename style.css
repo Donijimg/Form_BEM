@@ -130,10 +130,9 @@ body{
   background-color: #3c6bec;
 }
 
-.control {
-    margin-bottom: 20px;
-  }
-
-  .error {
-    color: red;
-  }
+.borde-rojo {
+  border-color: red;
+}
+.borde-verde {
+  border-color: green;
+}
